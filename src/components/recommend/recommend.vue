@@ -51,7 +51,7 @@
       this._getRecommend();
       setTimeout(() => {
          this.discList = musicData;
-      }, 3000);
+      }, 2000);
     },
     methods: {
       _getRecommend () {

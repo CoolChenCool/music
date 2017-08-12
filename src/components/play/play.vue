@@ -45,7 +45,6 @@
             </div>
             <span class="time time-r">{{format(currentSong.duration)}}</span>
           </div>
-
           <div class="operators">
             <div class="icon i-left">
               <i class="icon-sequence"></i>
@@ -64,7 +63,6 @@
             </div>
           </div>
         </div>
-
       </div>
     </transition>
     <transition name="mini">

@@ -23,6 +23,10 @@
       listenScroll: {
           type: Boolean,
           default: false
+      },
+      pullUp: {
+        type: Boolean,
+        default: false
       }
     },
     mounted () {
@@ -44,6 +48,13 @@
            this.scroll.on('scroll', (pox) => {
               _self.$emit('scroll', pox);
            });
+        }
+        if (this.pullUp) {
+            this.scroll.on('scrollEnd', () => {
+                if (this.scroll.y <= (this.scroll.maxScrollY + 50)) {
+                    this.$emit('scrollToEnd');
+                }
+            });
         }
       },
       enable () {

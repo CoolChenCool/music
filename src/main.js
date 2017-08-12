@@ -9,6 +9,9 @@ import 'common/stylus/index.styl';
 import fastClick from 'fastclick';
 import VueLoad from 'vue-lazyload';
 /* eslint-disable no-new */
+/* eslint-disable no-unused-vars */
+ import vConsole from 'vconsole';
+ console.log('test');
 Vue.use(VueLoad, {
   loading: require('./images/loading.gif')
 });
